@@ -104,17 +104,17 @@
                 <p>Army Project in Alabama</p>
 
                 <p>Old technologies (~2002)</p>
-                <img src="img/sysStruct.png">
+                <img class="fragment grow" src="img/sysStruct.png">
             </section>
 
             <section>
                 <h2>Source 2 - Verbing the Noun</h2>
-
+                <small>By the "pragmatic programmers": Thomas & Hunt</small>
                 <p>Showed us the basics of getting requirements from NL.</p>
-                <table>
+                <table class="fragment roll-in">
                     <thead>
                     <tr>
-                        <th>POS</th>
+                        <th>Part of Speech</th>
                         <th>Can Relate to...</th>
                     </tr>
                     </thead>
@@ -138,91 +138,52 @@
         </section>
 
         <section>
-            <section id="fragments">
-                <h2>Fragments</h2>
+            <h2>Creating REQT</h2>
+            <small>The name comes from Requirements + Wrecking</small>
+            <!--<img src="img/python.png">-->
+            <p><img src="img/nltk.png"></p>
 
-                <p>Hit the next arrow...</p>
+        </section>
 
-                <p class="fragment">... to step through ...</p>
+        <section>
+            <section>
+                <h2>Natural language requirements Goes in</h2>
 
-                <p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span>
-                </p>
+                <a href="#" class="navigate-down"><img src="img/filter.png">
 
-                <aside class="notes">
-                    This slide has fragments which are also stepped through in the notes window.
-                </aside>
+                </a>
             </section>
             <section>
-                <h2>Fragment Styles</h2>
+                <p><img src="img/json-logo.png"></p>
 
-                <p>There's different types of fragments, like:</p>
-
-                <p class="fragment grow">grow</p>
-
-                <p class="fragment shrink">shrink</p>
-
-                <p class="fragment roll-in">roll-in</p>
-
-                <p class="fragment fade-out">fade-out</p>
-
-                <p class="fragment current-visible">current-visible</p>
-
-                <p class="fragment highlight-red">highlight-red</p>
-
-                <p class="fragment highlight-blue">highlight-blue</p>
+                <h1>JSON Comes out</h1>
+                <small class="fragment">Very useful and extensible format.</small>
             </section>
         </section>
 
-        <section id="transitions">
-            <h2>Transition Styles</h2>
+        <section>
+            <h2>Data Flow through Reqt today</h2>
+            <ul>
+                <li>Natural Language</li>
+                <li>NLTK Tokenize</li>
+                <li>Gather Nouns & Stem</li>
+                <li>Gather Verbs & Stem</li>
+            </ul>
 
-            <p>
-                You can select from different transitions, like: <br>
-                <a href="?transition=none#/transitions">None</a> -
-                <a href="?transition=fade#/transitions">Fade</a> -
-                <a href="?transition=slide#/transitions">Slide</a> -
-                <a href="?transition=convex#/transitions">Convex</a> -
-                <a href="?transition=concave#/transitions">Concave</a> -
-                <a href="?transition=zoom#/transitions">Zoom</a>
-            </p>
+
         </section>
 
-        <section id="themes">
-            <h2>Themes</h2>
+        <section>
+            <h1>DEMO</h1>
+        </section>
 
-            <p>
-                reveal.js comes with a few themes built in: <br>
-                <!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-                <a href="#"
-                   onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black
-                    (default)</a> -
-                <a href="#"
-                   onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a>
-                -
-                <a href="#"
-                   onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a>
-                -
-                <a href="#"
-                   onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a>
-                -
-                <a href="#"
-                   onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a>
-                -
-                <a href="#"
-                   onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a>
-                <br>
-                <a href="#"
-                   onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a>
-                -
-                <a href="#"
-                   onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a>
-                -
-                <a href="#"
-                   onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a>
-                -
-                <a href="#"
-                   onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-            </p>
+        <section>
+            <h2>What's next?</h2>
+            <ul>
+                <li>Relate nouns and verbs</li>
+                <li>Relate entities</li>
+                <li>Web site to show versatility of tool</li>
+            </ul>
         </section>
 
         <section>
@@ -297,55 +258,6 @@
                     </code></pre>
             <p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.
             </p>
-        </section>
-
-        <section>
-            <h2>Marvelous List</h2>
-            <ul>
-                <li>No order here</li>
-                <li>Or here</li>
-                <li>Or here</li>
-                <li>Or here</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Fantastic Ordered List</h2>
-            <ol>
-                <li>One is smaller than...</li>
-                <li>Two is smaller than...</li>
-                <li>Three!</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Tabular Tables</h2>
-            <table>
-                <thead>
-                <tr>
-                    <th>Item</th>
-                    <th>Value</th>
-                    <th>Quantity</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Apples</td>
-                    <td>$1</td>
-                    <td>7</td>
-                <tr>
-                <tr>
-                    <td>Lemonade</td>
-                    <td>$2</td>
-                    <td>18</td>
-                <tr>
-                <tr>
-                    <td>Bread</td>
-                    <td>$3</td>
-                    <td>2</td>
-                <tr>
-                </tbody>
-            </table>
         </section>
 
         <section>
@@ -430,25 +342,7 @@
             </p>
         </section>
 
-        <section>
-            <h2>Much more</h2>
-            <ul>
-                <li>Right-to-left support</li>
-                <li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-                <li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-                <li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-                <li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-            </ul>
-        </section>
 
-        <section style="text-align: left;">
-            <h1>THE END</h1>
-
-            <p>
-                - <a href="http://slides.com">Try the online editor</a> <br>
-                - <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-            </p>
-        </section>
 
     </div>
 
