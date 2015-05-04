@@ -172,7 +172,7 @@
         </section>
 
         <section>
-            <h2>Reqt data ww</h2>
+            <h2>Reqt Data Flow</h2>
             <ul>
                 <li>Natural Language</li>
                 <li>NLTK Tokenize</li>
@@ -186,20 +186,19 @@
         <section>
             <h2>Reqt Usage</h2>
             <pre><code style="word-wrap: break-word;">
-            usage: driver.py [-h] [-j | -x] infile outfile
-            Input:
-                python3 drive.py sample.txt
-            Output:
+                usage: driver.py [-h] [-j | -x] infile outfile
+                $> python3 drive.py sample.txt
+
                 {
-                    "behaviors":
-                        ["project", "displayed",
-                        "ask", "set", "stated",
-                        "providing", "improved", "related"],
-                    "attributes":
-                        ["patient", "part", "transfer",
-                        "production", "ui", "tools",
-                        "roles", "country", "group",
-                        "need", "system", "communication"]
+                "behaviors":
+                    ["project", "displayed",
+                    "ask", "set", "stated",
+                    "providing", "improved", "related"],
+                "attributes":
+                    ["patient", "part", "transfer",
+                    "production", "ui", "tools",
+                    "roles", "country", "group",
+                    "need", "system", "communication"]
                 }
             </code></pre>
 
@@ -210,10 +209,19 @@
         </section>
 
         <section>
+            <h2>What's wrong?</h2>
+            <ul>
+                <li>Even with Hapax, need to remove unwanted words.</li>
+                <li>Part of speech in NLTK is not perfect.</li>
+                <li>The corpus can be too short.</li>
+            </ul>
+        </section>
+
+        <section>
             <h2>What's next?</h2>
             <ul>
                 <li>Relate nouns and verbs</li>
-                <li>Relate entities</li>
+                <li>Relate entities (NER?)</li>
                 <li>Web site to show versatility of tool</li>
                 <li>Use UML or Object Notation to create diagrams</li>
             </ul>
